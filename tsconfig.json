@@ -3,5 +3,13 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "ts-node": {
+    // ts-node 전용 설정
+    "transpileOnly": true,          // 타입 체크 생략 (빠른 실행)
+    "files": true,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
 }
