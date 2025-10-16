@@ -96,40 +96,6 @@ import { createGlobalTheme } from '@vanilla-extract/css';
 
 export const tokens = createGlobalTheme('${selector}', ${JSON.stringify(tokenTree, null, 2)});
 
-/**
- * TypeScript 타입 정의
- */
-export interface TokensType {
-${typeDefinitions.join('\n')}
-}
-
-/**
- * 런타임 타입
- */
-export type Tokens = typeof tokens;
-
-/**
- * 토큰 접근을 위한 유틸리티 함수 (타입 안전)
- */
-export const getToken = <T extends keyof TokensType>(path: T): string => {
-  const keys = String(path).split('.');
-  let value: any = tokens;
-  
-  for (const key of keys) {
-    value = value?.[key];
-    if (value === undefined) {
-      console.warn(\`Token not found: \${String(path)}\`);
-      return '';
-    }
-  }
-  
-  return value;
-};
-
-/**
- * 토큰 맵 (자동완성 지원)
- */
-export const tokenMap = ${JSON.stringify(tokenTree, null, 2)} as const;
 `;
   },
 });
