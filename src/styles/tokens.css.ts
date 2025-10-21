@@ -80,11 +80,6 @@ export const tokens = createGlobalTheme(':root', {
     "pretendard_1": "Regular"
   },
   "fontsize": {
-    "0": "36",
-    "1": "30",
-    "2": "22",
-    "3": "20",
-    "4": "18",
     "5": "16",
     "6": "14",
     "7": "16",
@@ -100,7 +95,12 @@ export const tokens = createGlobalTheme(':root', {
     "17": "12",
     "18": "12",
     "19": "14",
-    "20": "12"
+    "20": "12",
+    "dn_font_headline_lg": "36",
+    "dn_font_headline_md": "30",
+    "dn_font_headline_sm": "22",
+    "dn_font_title_xl": "20",
+    "dn_font_title_lg": "18"
   },
   "letterspacing": {
     "0": "0%",

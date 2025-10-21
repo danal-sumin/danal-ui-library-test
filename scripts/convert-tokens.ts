@@ -3,9 +3,24 @@ import { register } from "@tokens-studio/sd-transforms";
 import { Config, TransformedToken } from "style-dictionary/types";
 
 register(StyleDictionary, {
-  excludeParentKeys: true    // 중첩 키 최적화
+  excludeParentKeys: false    // 중첩 키 최적화
 });
 console.log("Registered @tokens-studio/sd-transforms with vanilla-extract optimizations!");
+
+// 토큰 소스를 전처리하여 참조 경로 수정
+StyleDictionary.registerPreprocessor({
+  name: 'tokens-studio/resolve-references',
+  preprocessor: (dictionary) => {
+    // tokens 객체를 플랫폼화하여 참조 문제 해결
+    if (dictionary.tokens) {
+      const flatTokens = dictionary.tokens;
+      // tokens 키를 제거하고 내용을 최상위로 이동
+      Object.assign(dictionary, flatTokens);
+      delete dictionary.tokens;
+    }
+    return dictionary;
+  }
+});
 
 
 // 토큰 이름을 정리하는 함수 (vanilla-extract에 최적화)
@@ -105,7 +120,8 @@ export const tokens = createGlobalTheme('${selector}', ${JSON.stringify(tokenTre
 
 
 const config: Config = {
-  source: ["design-tokens/tokens.json"],
+  source: ["design-tokens.json"],
+  preprocessors: ['tokens-studio/resolve-references'],
   platforms: {
     vanillaExtract: {
       transforms: [
