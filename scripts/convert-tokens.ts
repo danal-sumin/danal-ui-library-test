@@ -37,6 +37,19 @@ function sanitizeTokenName(name: string): string {
 
 
 
+// 모든 값을 문자열로 변환하는 transform
+StyleDictionary.registerTransform({
+  name: 'value/string',
+  type: 'value',
+  transform: function(token: TransformedToken) {
+    // 모든 값을 문자열로 변환
+    if (typeof token.$value === 'number') {
+      return String(token.$value);
+    }
+    return token.$value;
+  }
+});
+
 // Name Transform 등록 (충돌 방지)
 StyleDictionary.registerTransform({
   name: 'name/path-kebab',
@@ -126,6 +139,7 @@ const config: Config = {
     vanillaExtract: {
       transforms: [
         'name/path-kebab',    // 충돌 방지를 위한 이름 변환
+        'value/string',       // 모든 값을 문자열로 변환
         'ts/resolveMath',
         'ts/size/px', 
         'ts/color/modifiers',
@@ -152,7 +166,7 @@ const sd = new StyleDictionary(config);
 async function buildTokens() {
   try{
     await sd.buildAllPlatforms();
-    console.log('✅ Tokens built successfully!');
+    console.log('✅ Tokens built successfully!!');
   }catch(error){
     console.error('❌ Error building tokens:', error);
     process.exit(1);

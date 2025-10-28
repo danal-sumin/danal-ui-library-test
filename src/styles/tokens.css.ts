@@ -9,394 +9,105 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
 
 export const tokens = createGlobalTheme(':root', {
-  "neutral_gray": {
-    "dn_white": "#ffffff",
-    "dn_blue_gray_100": "#f9fafc",
-    "dn_blue_gray_200": "#f1f3f7",
-    "dn_blue_gray_300": "#e2e5eb",
-    "dn_blue_gray_400": "#c8ccd7",
-    "dn_blue_gray_500": "#a8afbd",
-    "dn_blue_gray_600": "#8993a6",
-    "dn_blue_gray_700": "#6e7688",
-    "dn_blue_gray_800": "#495267",
-    "dn_blue_gray_900": "#2d3548",
-    "dn_black": "#000000"
-  },
-  "blue_colors": {
-    "dn_blue_100": "#f0f7ff",
-    "dn_blue_200": "#dcebff",
-    "dn_blue_300": "#b6d4ff",
-    "dn_blue_400": "#7fb3ff",
-    "dn_blue_500": "#4792ff",
-    "dn_blue_600": "#0f71ff",
-    "dn_blue_700": "#004bcc",
-    "dn_blue_800": "#0030a8"
-  },
-  "status_colors": {
-    "dn_green_200": "#09c970",
-    "dn_yellow_100": "#ffe522",
-    "dn_skyblue_100": "#57a5ff",
-    "dn_red_200": "#fc342a"
-  },
-  "accent_colors": {
-    "dn_green_100": "#00c8c2",
-    "dn_green_200": "#09c970",
-    "dn_yellow_100": "#ffd119",
-    "dn_yellow_200": "#ffb922",
-    "dn_red_100": "#ff9a95",
-    "dn_pink_100": "#f544c6",
-    "dn_skyblue_100": "#57a5ff",
-    "dn_darkblue_100": "#0055dd",
-    "dn_purple_100": "#705bf7"
-  },
-  "fontfamilies": {
-    "pretendard": "Pretendard"
-  },
-  "lineheights": {
-    "0": "AUTO",
-    "1": "AUTO",
-    "2": "AUTO",
-    "3": "AUTO",
-    "4": "AUTO",
-    "5": "AUTO",
-    "6": "AUTO",
-    "7": "AUTO",
-    "8": "AUTO",
-    "9": "AUTO",
-    "10": "AUTO",
-    "11": "AUTO",
-    "12": "AUTO",
-    "13": "AUTO",
-    "14": "AUTO",
-    "15": "AUTO",
-    "16": "AUTO",
-    "17": "AUTO",
-    "18": "AUTO",
-    "19": "AUTO",
-    "20": "AUTO"
-  },
-  "fontweights": {
-    "pretendard_0": "Bold",
-    "pretendard_1": "Regular"
-  },
-  "fontsize": {
-    "5": "16",
-    "6": "14",
-    "7": "16",
-    "8": "16",
-    "9": "14",
-    "10": "14",
-    "11": "12",
-    "12": "12",
-    "13": "16",
-    "14": "16",
-    "15": "14",
-    "16": "14",
-    "17": "12",
-    "18": "12",
-    "19": "14",
-    "20": "12",
-    "dn_font_headline_lg": "36",
-    "dn_font_headline_md": "30",
-    "dn_font_headline_sm": "22",
-    "dn_font_title_xl": "20",
-    "dn_font_title_lg": "18"
-  },
-  "letterspacing": {
-    "0": "0%",
-    "1": "0%",
-    "2": "0%",
-    "3": "0%",
-    "4": "0%",
-    "5": "0%",
-    "6": "0%",
-    "7": "0%",
-    "8": "0%",
-    "9": "0%",
-    "10": "0%",
-    "11": "0%",
-    "12": "0%",
-    "13": "0%",
-    "14": "0%",
-    "15": "0%",
-    "16": "0%",
-    "17": "0%",
-    "18": "0%",
-    "19": "0%",
-    "20": "0%"
-  },
-  "paragraphspacing": {
-    "0": "0",
-    "1": "0",
-    "2": "0",
-    "3": "0",
-    "4": "0",
-    "5": "0",
-    "6": "0",
-    "7": "0",
-    "8": "0",
-    "9": "0",
-    "10": "0",
-    "11": "0",
-    "12": "0",
-    "13": "0",
-    "14": "0",
-    "15": "0",
-    "16": "0",
-    "17": "0",
-    "18": "0",
-    "19": "0",
-    "20": "0"
-  },
-  "headline": {
-    "lg": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "36px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
+  "dds_tokens_default": {
+    "color": {
+      "neutral_gray": {
+        "dn_white": "#ffffff",
+        "dn_blue_gray_100": "#f9fafc",
+        "dn_blue_gray_200": "#f1f3f7",
+        "dn_blue_gray_300": "#e2e5eb",
+        "dn_blue_gray_400": "#c8ccd7",
+        "dn_blue_gray_500": "#a8afbd",
+        "dn_blue_gray_600": "#8993a6",
+        "dn_blue_gray_700": "#6e7688",
+        "dn_blue_gray_800": "#495267",
+        "dn_blue_gray_900": "#2d3548",
+        "dn_black": "#000000"
+      },
+      "blue_colors": {
+        "dn_blue_100": "#f0f7ff",
+        "dn_blue_200": "#dcebff",
+        "dn_blue_300": "#b6d4ff",
+        "dn_blue_400": "#7fb3ff",
+        "dn_blue_500": "#4792ff",
+        "dn_blue_600": "#0f71ff",
+        "dn_blue_700": "#004bcc",
+        "dn_blue_800": "#0030a8"
+      },
+      "status_colors": {
+        "dn_green_200": "#09c970",
+        "dn_yellow_100": "#ffe522",
+        "dn_skyblue_100": "#57a5ff",
+        "dn_red_200": "#fc342a"
+      },
+      "accent_colors": {
+        "dn_green_100": "#effef5",
+        "dn_green_200": "#89de9e",
+        "dn_yellow_100": "#fffce8",
+        "dn_yellow_200": "#ffe96d",
+        "dn_red_100": "#ffefef",
+        "dn_pink_100": "#ffeffa",
+        "dn_skyblue_100": "#57a5ff",
+        "dn_darkblue_100": "#0055dd",
+        "dn_purple_100": "#f7f1ff",
+        "dn_green_300": "#04b060",
+        "dn_mint_100": "#effefc",
+        "dn_mint_300": "#00b7c4",
+        "dn_yellow_300": "#ffb700",
+        "dn_red_200": "#ffb7b3",
+        "dn_red_300": "#f00b00",
+        "dn_pink_200": "#ffb8ec",
+        "dn_pink_300": "#f544c6",
+        "dn_purple_200": "#ccb7ff",
+        "dn_purple_300": "#705bf7",
+        "dn_mint_200": "#96e8e6"
+      }
     },
-    "md": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "30px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
+    "typography": {
+      "fontfamily": {
+        "pretendard": "Pretendard",
+        "malgun_gothic": "Malgun Gothic",
+        "roboto": "Roboto"
+      },
+      "fontweights": {
+        "dn_font_weight_bold": "Bold",
+        "dn_font_weight_regular": "Regular",
+        "dn_font_weight_semibold": "Semibold",
+        "dn_font_weight_medium": "Medium"
+      },
+      "fontsize": {
+        "dn_font_size_xxl": "30",
+        "dn_font_size_xl": "22",
+        "dn_font_size_lg": "20",
+        "dn_font_size_md": "18",
+        "dn_font_size_sm": "16",
+        "dn_font_size_xs": "14",
+        "dn_font_size_xxs": "12",
+        "dn_font_size_xxxl": "36"
+      },
+      "letter_spacing": {
+        "dn_letter_spacing_tight": "-0.25",
+        "dn_letter_spacing_normal": "0",
+        "dn_letter_spacing_wide_sm": "0.25",
+        "dn_letter_spacing_wide_md": "0.5",
+        "dn_letter_spacing_wide_lg": "1"
+      },
+      "lineheights": {
+        "dn_line_height_tight": "19",
+        "dn_line_height_normal": "22",
+        "dn_line_height_relaxed": "26",
+        "dn_line_height_loose": "29"
+      }
     },
-    "sm": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "22px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
+    "radius": {
+      "dn_radius_none": "0",
+      "dn_radius_xs": "2",
+      "dn_radius_sm": "4",
+      "dn_radius_md": "6",
+      "dn_radius_lg": "8",
+      "dn_radius_xl": "12",
+      "dn_radius_full": "9999"
     }
-  },
-  "title": {
-    "xl": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "20px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "lg": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "18px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "md": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "16px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "sm": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "14px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    }
-  },
-  "body": {
-    "lg_bold": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "16px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "lg_regular": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Regular",
-      "lineHeight": "AUTO",
-      "fontSize": "16px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "md_bold": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "14px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "md_regular": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Regular",
-      "lineHeight": "AUTO",
-      "fontSize": "14px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "sm_bold": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "12px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "sm_regular": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Regular",
-      "lineHeight": "AUTO",
-      "fontSize": "12px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    }
-  },
-  "label": {
-    "lg_bold": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "16px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "lg_regular": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Regular",
-      "lineHeight": "AUTO",
-      "fontSize": "16px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "md_bold": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "14px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "md_regular": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Regular",
-      "lineHeight": "AUTO",
-      "fontSize": "14px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "sm_bold": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Bold",
-      "lineHeight": "AUTO",
-      "fontSize": "12px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "sm_regular": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Regular",
-      "lineHeight": "AUTO",
-      "fontSize": "12px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    }
-  },
-  "caption": {
-    "md_regular": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Regular",
-      "lineHeight": "AUTO",
-      "fontSize": "14px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    },
-    "sm_regular": {
-      "fontFamily": "Pretendard",
-      "fontWeight": "Regular",
-      "lineHeight": "AUTO",
-      "fontSize": "12px",
-      "letterSpacing": "0%",
-      "paragraphSpacing": "0",
-      "paragraphIndent": "0px",
-      "textCase": "none",
-      "textDecoration": "none"
-    }
-  },
-  "textcase": {
-    "none": "none"
-  },
-  "textdecoration": {
-    "none": "none"
-  },
-  "paragraphindent": {
-    "0": "0px"
   }
 });
 
